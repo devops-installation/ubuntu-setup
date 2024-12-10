@@ -17,6 +17,7 @@ echo \
 sudo apt-get update
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo apt  install docker-compose 
 sudo usermod -aG docker $USER
 
 
@@ -37,6 +38,16 @@ sudo systemctl start docker.service
 sudo systemctl status docker.service
 sudo systemctl enable containerd.service
 sudo systemctl start containerd.service
+
+# Docker Compose
+sudo apt update
+sudo apt install -y docker-compose-plugin
+
+docker-compose build
+docker-compose pull
+docker-compose down
+docker-compose up  -d
+docker system prune -af
 
 
 # uninstall engine 
