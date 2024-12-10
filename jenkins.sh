@@ -11,6 +11,7 @@ cat id_*.pub >> authorized_keys
 cat id_rsa
 
 # sudo permissions
+sudo usermod -aG sudo shubham
 sudo visudo
 shubham  ALL=(ALL) NOPASSWD: ALL
 sudo ls /root
