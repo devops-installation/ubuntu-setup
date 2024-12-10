@@ -6,6 +6,8 @@ sudo apt install -y nodejs
 sudo npm install -g pm2
 
 npm install
+npm install -g yarn
+
 pm2 start app.js --name my-api
 pm2 startup
 pm2 save
