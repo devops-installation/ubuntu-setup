@@ -42,6 +42,7 @@ sudo systemctl start containerd.service
 # Docker Compose
 sudo apt update
 sudo apt install -y docker-compose-plugin
+sudo apt  install docker-compose
 
 docker-compose build
 docker-compose pull
